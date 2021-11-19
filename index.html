@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Language</title>
+    
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/The_C_Programming_Language_logo.svg/1200px-The_C_Programming_Language_logo.svg.png">
+    <style>
+        html {
+  scroll-behavior: smooth;
+}
+    body{
+  min-width: 290px;
+  background-color:whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+     }
+     header{
+         font-size: 40px;
+         font-family: cursive;
+         background-color: lightskyblue;
+         padding-left: 50px;
+     }
+     table,
+      th,
+      td {
+        padding: 10px;
+        border: 2px solid black;
+        border-collapse: collapse; 
+        
+      }
+      h1{
+        font-size:40px;
+        font-weight: bold ;
+        font-family: cursive;
+        background-image: linear-gradient(to right,lightskyblue,blue,lightskyblue);
+        border-radius: 20px;
+      }
+     #nav {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: black;
+  
+    
+}
+main{
+    position: absolute;
+  margin-left: 410px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+#list{
+    list-style: none;
+}
+a{
+    display:block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+}
+
+
+h2{
+  text-align: center;
+  background-image: linear-gradient(to right,yellow,rgb(131, 131, 6));
+  border-radius: 20px;
+}
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #nav {
+    background-color: white;
+    position: absolute;
+    
+    width: 100%;
+    max-height: 475px;
+    border: none;
+    
+    border-bottom: 2px solid;
+  }
+
+  #main {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 570px;
+  }
+}
+    </style>
+</head>
+<body>
+    
+    <nav id="nav">
+        <header>C Language</header>
+        <ul id=list>
+           
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#operatingsystem">Operating System</a></li>
+            <li><a href="#algorithm">Algorithm</a></li>
+            <li><a href="#flowchart">Flow Chart</a></li>
+            <li><a href="#Pseudocode">Pseudo Code</a></li>
+            <li><a href="#structure">Structure of C Program</a></li>
+            <li><a href="#C">Characteristics of C</a></li>
+            <li><a href="#ifelse">If Else</a></li>
+            <li><a href="#switch">Switch Statement</a></li>
+            <li><a href="#loops">Loops</a></li>
+            </ul>
+    </nav>
+    <main id="main">
+  <h1><marquee behavior="alternate">C Documentation</marquee></h1>
+  <section id="introduction">
+  <h2>Introduction</h2> 
+  <p><b>Computer:</b>Computer is an electronics device that can perform various
+    arithmetic and logical operations. It can receive data, process it and
+    produce output. It can store large amount of data.</p>
+    <h3>Block Diagram of a Computer</h3>
+    <img src="https://www.tutorialandexample.com/wp-content/uploads/2019/09/Block-diagram-of-a-computer.png">
+    <h3>Functional Units of Digital Computer</h3>
+    <p>A digital computer is considered to be a calculating device that can perform arithmetic
+        operations at enormous speed.</p>
+        <ol>
+            <li><b>Input Unit:</b>The commonly used input devices are mouse, mike, key
+                board,scanner, optical mark reader, joy stick etc. Thus, we can conclude that, all the
+                input devices accepts the data and instruction from outside world, convert it to a form
+                that the computer can understand, supply the converted data to the computer system
+                for further processing.</li>
+                <li><b>Storage Unit:</b>The storage unit of a computer holds data and instructions that are
+                    entered through the input unit, before they are processed. It stores programs, data as
+                    well as intermediate results and results for output. Its main function is to store
+                    information.</li>
+                    <li><b>Central Processing Unit (CPU):</b>The control unit and arithmetic logic unit of
+                        computer are together known as central processing unit (CPU). The CPU is like brain
+                        and performs following functions: It performs all calculations, it takes all decisions,
+                        and it controls all units of a computer.</li>
+                        <li><b>Output Unit:</b>An output unit performs the reverse operation of that of an input unit
+                            so it supplies information obtained from processing to outside world. Units
+                            called output interfaces accomplish this task. Example:
+                            monitor,printer,speaker,projector etc.</li>
+        </ol>
+        <h3>Difference of Low Level and High Level Language:</h3>
+        <table>
+            <tr>
+                <th>Low Level Language</th>
+                <th>High Level Language</th>
+            </tr>
+            <tr>
+                <td>They are faster than high level language.</td>
+                <td>They are comparatively slower.</td>
+            </tr>
+            <tr>
+                <td>Low level languages are memory efficient.</td>
+                <td>High level languages are not memory efficient.</td>
+            </tr>
+            <tr>
+                <td>No need of translator except assembler for AL.</td>
+                <td>Compiler & Interpreter is needed to convert HLL.</td>
+            </tr>
+            <tr>
+                <td>Ex: Machine/Assembly Language</td>
+                <td>Ex: C, C++, Java</td>
+            </tr>
+        </table>
+        </section>
+        <section id="operatingsystem">
+<h2>Operating System</h2>
+<ul>
+    <li>An Operating System(OS) is a system program which provides an interface between computer user and computer hardware.Some popular operating systems include UNIX, Linux and Windows etc.</li>
+    <li><b>Resource Manager/Allocator:</b>An operating system is termed as resource manager ,as its provides all necessary resources to application execution inside a computer system, like to play a song, OS
+        allocates operational mouse, monitor, speaker, ram, hard disk, buses, processor etc
+        to application.</li>
+        <li><b>Following are some of important functions of an operating System.</b></li>
+        <li>Memory Management</li>
+        <li>Processor Management</li>
+        <li>Device Management</li>
+        <li>File Management</li>
+        <li>Security</li>
+</ul>
+        </section>
+        <section id="algorithm">
+            <h2>Algorithm & Characteristics of Algorithm</h2>
+            <ul>
+                <li>A step-by-step method of solving a problem or making decision is termed as algorithm.</li>
+            </ul>
+            <h3>Properties of the algorithm</h3>
+            <ul>
+                <li><b>input:</b>An algorithm has zero or more inputs.</li>
+                <li><b>Output:</b>An algorithm has one or more outputs.</li>
+                <li><b>Finiteness:</b>An algorithm must always terminate after a finite number of steps.</li>
+                <li><b>Definiteness:</b>Each step of an algorithm must be precisely defined; the actions to be
+                    carried out must be rigorously and unambiguously specified for each case.</li>
+                    <li><b>Effectiveness:</b>An algorithm is also generally expected to be effective. This means
+                        that all of the operations to be performed in the algorithm must be sufficiently basic
+                        that they can in principle be done exactly and in a finite length of time.</li>
+            </ul>
+            <h2>Advantage & Disadvantages</h2>
+           <h3>Advantages of algorithm</h3>
+           <ul>
+               <li>An algorithm uses a definite procedure which makes it easy to understand.</li>
+               <li>It is not dependent on any programming language, so it is easy to understand.</li>
+               <li>Every step in an algorithm has its own logical sequence so it is easy to debug.</li>
+               <li>By using algorithm, the problem is broken down into smaller pieces or steps.</li>
+           </ul>
+           <h3>Disadvantages of algorithm</h3>
+           <ul>
+               <li>Writing algorithm takes a long time.</li>
+               <li>An algorithm is not a computer program; it is rather a concept of how a program should be.</li>
+           </ul>
+           <h2>Example of Algorithm</h2>
+           <ul>
+               <li>Write an algorithm to find an addition of two number</li>
+           </ul>
+           <pre>
+           step:-1&nbsp;&nbsp;Start
+           step:-2&nbsp;&nbsp;input <b>a</b> and <b>b</b>
+           step:-3&nbsp;&nbsp;<b>c=a+b</b>
+           step:-4&nbsp;&nbsp;print c
+           step:-5&nbsp;&nbsp;Stop
+           </pre>
+        </section>
+        <section id="flowchart">
+            <h2>Flowcharts and its Notations</h2>
+            <p><b>Flowchart:-</b>It is a diagrammatic representation of sequence of logical
+                 steps of a program. Flowcharts use simple geometric shapes to depict processes and arrows to show relationships and process/data flow.</p>
+            <h3>Advantages of flowchart:</h3>
+            <ul>
+                <li>The Flowchart is an excellent way of communicating the logic of a program.</li>
+                <li>It is easy and efficient to analyze problem using flowchart.</li>
+                <li>It helps the programmer to write the program code.</li>
+            </ul>
+            <h3>Disadvantages of flowchart:</h3>
+            <ul>
+                <li>The flowchart can be complex when the logic of a program is quite complicated.</li>
+                <li>Drawing flowchart is a time-consuming task.</li>
+                <li>Difficult to alter the flowchart & uses special sets of symbols for every action.</li>
+            </ul>
+            <table>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Symbol Name</th>
+                    <th>Purpose</th>
+                </tr>
+                <tr>
+                    <td><img src="https://us.123rf.com/450wm/ahasoft2000/ahasoft20001805/ahasoft2000180512889/101095523-ellipse-frame-template-vector-draft-element-for-stamp-seals-in-blue-color-.jpg?ver=6" width=60%></td>
+                    <td>Start/Stop</td>
+                    <td>Used at the beginning and end of the
+                        algorithm to show start and end of the
+                        program.</td>
+                </tr>
+                <tr>
+                    <td><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAG1BMVEX///8AAACOjo6/v7/IyMiHh4fh4eFlZWXExMR8FmAlAAAA1klEQVR4nO3c0Q2DMABDQdoSYP+Ju4I/ojrQuwEsvQW8bQAAAAAAAAAAAAAAAAAAwA0d472qcUwp3F/r2hWmhef1Wc91TiwcU4ZmGwpTCmsUxhTWKIwprFEYU1ijMKawRmFMYY3CmMIahTGFNQpjCmsUxhTWKIwprFEYU1ijMKawRmFMYY3CmMIahTGFNQpjCmsUxhTWKIwprFEYU1ijMKawRmFMYY3CmMIahTGFNQpjCmsUxhTWKIz9ReHzP4aWpTDz/L82AAAAAAAAAAAAAAAAAADgx76uNA/ZsR81hwAAAABJRU5ErkJggg==" width=60%></td>
+                    <td>Process</td>
+                    <td>Indicates processes like mathematical
+                        operations.</td>
+                </tr>
+                <tr>
+                    <td><img src="https://f4.bcbits.com/img/a3104669527_10.jpg"width="60%"></td>
+                    <td>Input/Output</td>
+                    <td>Used for denoting program inputs and
+                        outputs.</td>
+                </tr>
+                <tr>
+                    <td><img src="https://i.pinimg.com/originals/86/82/26/868226ebd71b81071cd9696b3b5fca5e.jpg"width="50%"></td>
+                    <td>Decision</td>
+                    <td>Stands for decision statements in a
+                        program, where answer is usually Yes
+                        or No.</td>
+                </tr>
+                <tr>
+                    <td><img src="https://d20khd7ddkh5ls.cloudfront.net/circle_3.png" width="60%"></td>
+                    <td>Connector</td>
+                    <td>use to connect the flow of two of more
+                        flow charts</td>
+                </tr>
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Biochem_reaction_arrow_forward_NNNN_horiz_med.svg/1200px-Biochem_reaction_arrow_forward_NNNN_horiz_med.svg.png" width="50%"></td>
+                    <td>Arrow</td>
+                    <td>Shows relationships between different
+                        shapes.</td>
+                </tr>
+            </table>
+            <h3>Example of Flowchart:-</h3>
+            <h4>Flowchart of Simple Interest</h4>
+            <img src="https://2.bp.blogspot.com/-mDJZhy4jR6Y/WRA-R3YehJI/AAAAAAAAATI/ngYE6iJH2vYcjN3qZ3gjYKHVVHuu4juWACLcB/s400/SimpleInterest.png">
+        </section>
+        <section id="Pseudocode">
+            <h2>Pseudo Code</h2><br>
+            <p>Pseudocode is an informal way of programming description that does not
+                require any strict programming language syntax or underlying technology
+                considerations. It is used for creating an outline or a rough draft of a program.
+                Pseudocode summarizes a program’s flow, but excludes underlying details. System
+                designers write pseudocode to ensure that programmers understand a software
+                projects requirements and align code accordingly.</p>
+                <h3>Advantages of Pseudo Code</h3>
+                <ol>
+                    <li>Pseudocode is understood by the programmers of all types.</li>
+                    <li>It enables the programmer to concentrate only on the algorithm part of the code
+                        development.</li>
+                        <li>It cannot be compiled into an executable program.</li>
+                </ol>
+                <h4>Example:-</h4>
+                <h4>Average of 10 numbers:-</h4>
+                <pre>
+                    Set total = 0
+                    Set I = 0
+                    While i is less than or equal to 10
+                           Input the next number
+                           Add the number into the total
+                           I=I+1
+                    Set the average to the total divided by 10
+                    Print the average
+                </pre>
+        </section>
+        <section id="structure">
+            <h2>Structure of C Program</h2>
+            <pre>
+/ Sample of C Program(documentation Section)
+
+#include &lt;stdio.h&gt; // link section
+
+#include&lt;conio.h&gt; // link section
+
+#define pi 3.14 // definition section
+
+int a=10; // global variable declaration
+
+void disp(); // global function declaration
+
+void main() // main function definition
+
+{
+
+float area,r;
+
+printf(“enter radius”);
+
+scanf(“%f”,&r);
+
+area=pi*r*r;
+
+printf(“area=%f”,area);
+
+disp();
+
+getch();
+
+}
+     </pre>
+     
+        </section>
+        <section id="C">
+            <h2>Characteristics of C</h2>
+            <ul>
+                <li>C is a middle level language.</li>
+                  <li>C is structured programming language.</li>
+                    <li>It is efficient.</li>
+                    <li>It is a portable language.</li>
+                    <li>It has rich set of operators and data type.</li>
+                    <li>Emphasis is on doing things and data move freely.</li>
+            </ul>
+           <h2>Application of C</h2>
+           <ul>
+               <li>Operating system like Windows Unix Linux are written in C.</li>
+               <li>3D games and device drivers are written in C.</li>
+               <li>C programming language can be used to design the compilers.</li>
+           </ul> 
+           <h2>Data Types</h2>
+           <p>Data types determine the types of value and the range of values that can be stored in
+            a variable</p>
+            <p><b>C support three classes of data types</b></p>
+            <ol>
+                <li>Primary data type🡪 char, int, float.</li>
+                <li>Derived data type🡪 array, pointer.</li>
+                <li>User defined data type 🡪 structure, union, enum.</li>
+            </ol>
+            <h3>Program of sum of three number:- </h3>
+            <pre>
+                #include &lt;stdio.h&gt;
+                    void main ()
+                    {
+                    int a, b, c, d;
+                    printf("Enter three numbers a, b & c: ");
+                    scanf("%d %d %d", &a, &b, &c);
+                    d = a + b + c;
+                    printf("Sum = %d", d);
+                    }
+                    
+                    <b><u>OUTPUT</u></b>
+                    
+                    Enter three numbers a, b & c : 1 2 3 
+                    Sum = 6
+            </pre>
+        </section>
+        <section id="ifelse">
+            <h2> Diagram of if else program</h2>
+            <img src="https://www.2braces.com/images/c-nested-else-if-flowchart.svg" width="60%">
+            <h3>If Else</h3>
+            <p>The if statement alone tells us that if a condition is true it will execute a block of
+                statements and if the condition is false it won’t.
+                <br>
+                But what if we want to do something else if the condition is false. Here comes the C
+                else statement.
+                <br>
+                else is optional statement.
+                <br>
+                We can use the else statement with if statement to execute a block of code when the
+                condition is false.</p>
+                <h2>Program of even or odd</h2>
+                <pre>
+                    #include&lt;stdio.h&gt;
+                        int main()
+                        {
+                        int n;
+                        printf("enter the no");
+                        scanf("%d",&n);
+                        if(n%2==0)
+                        printf("%d is even number",n);
+                        else
+                        printf("%d is odd number",n);
+                        return 0;
+                        }
+                </pre>
+        </section>
+        <section id="switch">
+            <h2>Switch Statement</h2>
+            <p>It is a in built multiway decision system in C.<br>
+                The control statement that allows us to make a decision from the number of choices
+                is called the switch case statement.</p>
+                <h3>Rules for switch statement</h3>
+                <ul>
+                    <li>The switch case must be constant or a constant expression.</li>
+                    <li>The case label must be constant and unique.</li>
+                    <li>Case label must end with colon(:) and each statement with semi colon(;).</li>
+                    <li>Case label can be int or char constant but it cannot be float.</li>
+                    <li>Using break  is compulsory but default is optional.</li>
+                </ul>
+                <h3>Syntax of switch statement:-</h3>
+                <pre>
+                    switch(integer exp)
+                    {
+                    case value1:
+                    block 1;
+                    break;
+                    case value2:
+                    block 2;
+                    break;
+                    case value n:
+                    block n;
+                    break;
+                    default:
+                    block x;
+                    }
+                </pre>
+                <h2>Flowchart of switch statement</h2>
+                <img src="https://cdn.programiz.com/sites/tutorial2program/files/flowchart-switch-statement.jpg">
+                <h2>Program of Calculator:-</h2>
+                <pre>
+                    #include &lt;stdio.h &gt;
+                        int main()
+                        {
+                        int a,b,c,ch;
+                        printf("Enter First number:\n");
+                        scanf("%d",&a);
+                        printf("Enter second number:\n");
+                        scanf("%d",&b);
+                        printf("\nEnter 1 for addition:\n ");
+                        printf("Enter 2 for subtraction:\n ");
+                        printf("Enter 3 for multiply:\n");
+                        printf("Enter 4 for division:\n ");
+                        scanf("%d",&ch);
+                        switch(ch)
+                        {
+                        default: printf("wrong input\n");
+                        case 1 : c=a+b;
+                        printf(“sum is :%d\n",c);
+                        break;
+                        case 2 : c=a-b;
+                        printf("Sub is : %d\n",c);
+                        break;
+                        case 3 : c=a*b;
+                        printf(“Mul is%d\n",c);
+                        break;
+                        case 4 : c=a/b;
+                        printf("div is : %d\n",result);
+                        break;
+                        }
+                        return 0;
+                        }
+                </pre>
+        </section>
+        <section id="loops">
+            <h2>Loops</h2>
+            <p>The instructions which are used to repeat any statement multiple number of times depending on
+                specific condition is known as repetition or looping control instructions.</p>
+                <h3>Types of loops:-</h3>
+                <ul>
+                    <li>For loop</li>
+                    <li>While loop</li>
+                    <li>Do while loop</li>
+                </ul>
+                <h3>For loop</h3>
+                <p>It is used to repeat the block of code, on basis of some specific condition.</p>
+                <h4>Syntax</h4>
+                <pre>
+                       (1)             (2)        (3)
+                for(initialization ; condition ; increment/decrement) 
+                {
+                true block statement;  (4)
+                }
+                statement x: (5)
+                <p><b>Order of execution:-</b></p>
+                <br>
+                T      T     F
+                1 2 4 3 2 4 3 2 5
+                </pre>
+                <h3>Program of print character 10 times:-</h3>
+                <pre>
+                int i;
+                for(i=1 ; i<=10 ; i=i+1)
+                {
+                printf("a");
+                }
+
+               <b>Output:-</b>
+                 aaaaaaaaaa
+                </pre>
+                <h3>While loop</h3>
+                <p> It is used to repeat the block of code, on basis of some specific condition.</p>
+                <h4>Syntax</h4>
+                <pre>
+                    initialization (1)
+                    while(condition) (2)
+                   {
+                   true block statement; (4)
+                   increment/decrement; (3)
+                   }
+                   statement x: (5)
+
+                   <b>Order of Execution:-</b>
+
+                      T      T    F
+                      1 2 4 3 2 4 3 2 5
+                </pre>
+                <h3>Program of print character 10 times:-</h3>
+                <pre>
+                    int i=1;
+                    while(i<=10)
+                    {
+                    printf("a");
+                    i = i + 1;
+                    }
+                    
+                    <b>Output:-</b>
+
+                    aaaaaaaaaa
+                
+                </pre>
+                <h3>Do while loop</h3>
+                <p>In do while the block is executed first & then the condition is checked.</p>
+                <h4>Syntax:-</h4>
+                <pre>
+                    Initialization  (1)
+                    do
+                    {
+                    true block statement;  (4)
+                    increment/decrement;  (3)
+                    }
+                    while(condition)  (2);
+                    statement x:   (5)
+
+                    <b>Order of Execution:-</b>
+
+                    T       F
+                    1 4 3 2 4 3 2 5
+                </pre>
+        </section>
+        </main>
+</body>
+</html>
